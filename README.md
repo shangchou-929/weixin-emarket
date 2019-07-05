@@ -9,4 +9,13 @@
 * 加入购物车
 * 立即支付
 ## 页面展示
+主页展示
 ![](https://github.com/shangchou-929/weixin-emarket/raw/master/mydemo/demo1.png)
+商品展示
+![](https://github.com/shangchou-929/weixin-emarket/raw/master/mydemo/demo2.png)
+商品详情页展示
+![](https://github.com/shangchou-929/weixin-emarket/raw/master/mydemo/demo3.png)
+商品收藏页展示
+![](https://github.com/shangchou-929/weixin-emarket/raw/master/mydemo/demo4.png)
+加入购物车展示
+![](https://github.com/shangchou-929/weixin-emarket/raw/master/mydemo/demo5.png)
