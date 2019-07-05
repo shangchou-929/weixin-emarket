@@ -1,0 +1,21 @@
+<view class="home">
+  <!-- 轮播图 -->
+  <swiper style="height: {{swiperHeight}}px;" indicator-dots='{{isHasDots}}' indicator-active-color='{{dotsActiveColor}}' autoplay='{{isAutoPlay}}' interval='{{interval}}' duration='{{duration}}' circular='{{isCircular}}'>
+    <swiper-item wx:for="{{swiperImgs}}" wx:key="{{index}}">
+    <image class='auto-img' mode='widthFix' bindload="loadedImg" src='{{item.img}}'></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 中间的导航栏 -->
+  <view class='homeList' >
+    <view class='list' wx:for="{{homeList}}" wx:key="{{index}}">
+      <image class='list-img' mode='widthFix' src='{{item.img}}'></image>
+      <view class='list-name'>{{item.name}}</view>
+    </view>
+  </view>
+
+  <!-- 底部栏 -->
+  <view class='homeBottom' wx:for="{{bottomImg}}" wx:key="{{index}}">
+    <image class='bottomimg' src='{{item.img}}'></image>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<view>
+  <view class='pay-main'>
+    <view class='title'>
+      <text>购物清单</text>
+    </view>
+  </view>
+  <view class='pay-list' wx:for="{{buytItems}}" wx:key="{{index}}">
+    <view class='list'>
+      <image class='main-image' src='{{item.image}}' ></image>
+      <view class='main_left'>
+        <text class='main-title'>{{item.title}}</text>
+        <text class='main-price'>￥{{item.price}}</text>
+      </view>
+
+      <view class='main_right'>
+        <text>x{{item.value}}</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class='pay-mainTwo'>
+    <view class='mainTwo-one' style="margin-left: 10px;font-size: 13px;">
+      <text>配送时间</text>
+    </view>
+
+    <view class='mainTwo-two'>
+      <picker bindchange='select' value='{{index}}' range='{{array}}'>
+        <view class='array'>
+          <text>{{array[index]}}</text>
+          <image src='../../images/right.png'></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class='pay-mainThree'>
+    <view class='mainThree-one'>
+      <text>留言</text>
+    </view>
+    <view class='mainThree-two'>
+      <input placeholder='选填：给商家留言(100字以内)'></input>
+    </view>
+  </view>
+
+  <view class='pay-mainFive'>
+    <view class='mainFive-one' wx:for="{{buytItems}}" wx:key="{{index}}">
+      <text class='left'>订单金额</text>
+      <text class='right'>￥{{item.price}}</text>
+    </view>
+  </view>
+
+  <view class='pay-Bottom' bindtap='pay'>微信支付</view>
+</view>

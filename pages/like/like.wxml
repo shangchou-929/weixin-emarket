@@ -1,0 +1,28 @@
+<view class="pro">
+  <view wx:for="{{likeProlist}}" wx:key="{{index}}" class="item {{index % 2 == 0 ? 'a' : 'b'}}">
+
+    <!-- 图片盒子 -->
+    <view bindtap="previewDetail" data-id="{{item.id}}">
+      <!-- data-id: previewDetail需要使用的参数 -->
+      <image class="auto-img" mode="widthFix" src="{{item.img}}"></image>
+    </view>
+
+    <view class="pro-info">
+      <view class="pro-name">{{item.name}}</view>
+      <view class="clearfix price-box">
+        <view class="fl clearfix price">
+          <view class="fl price">￥{{item.price}}</view>
+          <view class="fl buy" wx:if="{{item.isHot}}">{{item.hotText}}</view>
+        </view>
+        <view class="fr same">看相似</view>
+      </view>
+      <view class="vip">
+        <view class="fl" wx:if="{{item.isPlus}}" >plus</view>
+        <view class='fr delete' bindtap='delProduct' data-id="{{item.id}}" data-index="{{index}}">
+          <image class='auto-img' mode='widthFix' src='{{item.delIcon}}'></image>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

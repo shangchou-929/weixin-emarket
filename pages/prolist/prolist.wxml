@@ -1,0 +1,38 @@
+<view class="box">
+  <!-- 导航栏 -->
+  <view class='navlist' wx:for="{{navList}}" wx:key="{{index}}">
+    <!-- 判断导航标志是否等于导航的id 是的话颜色变红 -->
+    <view class='type-nav {{curNav == item.id? "selected" : ""}}' data-id='{{item.id}}' data-index='{{index}}' bindtap='selectNav'>{{item.name}}</view>
+  </view>
+</view>
+
+<!-- 商品列表 -->
+
+<view class="pro">
+  <view wx:for="{{productlist[curIndex]}}" wx:key="{{index}}" class="item {{index % 2 == 0 ? 'a' : 'b'}}">
+
+    <!-- 图片盒子 -->
+    <view bindtap="previewDetail" data-id="{{item.id}}">
+      <!-- data-id: previewDetail需要使用的参数 -->
+      <image class="auto-img" mode="widthFix" src="{{item.img}}"></image>
+    </view>
+
+    <view class="pro-info">
+      <view class="pro-name">{{item.name}}</view>
+      <view class="clearfix price-box">
+        <view class="fl clearfix price">
+          <view class="fl price">￥{{item.price}}</view>
+          <view class="fl buy" wx:if="{{item.isHot}}">{{item.hotText}}</view>
+        </view>
+        <view class="fr same">看相似</view>
+      </view>
+      <view class="vip">
+        <view class="fl" wx:if="{{item.isPlus}}" >plus</view>
+        <view class="fr like" bindtap="like" data-id="{{item.id}}" data-index="{{index}}">
+          <image class="auto-img" mode="widthFix" src="{{item.heart}}"></image>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

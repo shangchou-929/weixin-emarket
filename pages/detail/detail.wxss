@@ -1,0 +1,141 @@
+.pro-img {
+  height: 300px;
+  width: 100%;
+}
+
+.info-price {
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.pro-price {
+  color: red;
+  margin-left: 10px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.like {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.info-img {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.like .focus {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.reminder {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.reminder .reduce {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.info-name {
+  font-size: 14px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.insurance {
+  overflow: hidden;
+  padding: 7px 5px;
+  background-color: #fbf0fd;
+  margin: 10px 0;
+}
+
+.insurance-left {
+  color: #672e9a;
+}
+
+.left-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.left-word {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.words {
+  color: #662d99;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.insurWord {
+  float: left;
+  margin-left: 20px;
+}
+
+.more {
+  float: right;
+  margin-right: 5px;
+}
+
+.moreIcon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 20px;
+}
+
+.test {
+  height: 600px;
+}
+
+.bottomNav {
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #ccc;
+}
+
+.buy {
+  width: 100px;
+  background-color: #f50a00;
+  color: white;
+  float: right;
+}
+
+.shopping {
+  width: 100px;
+  background-color: #ffaf00;
+  color: white;
+  float: right;
+}
+
+.bottomLeft{
+  width: calc(100% - 200px);
+  
+}
+
+.bl{
+  width: 33%;
+  float: left;
+}
+.e{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  
+}
+.blWords{
+  
+}

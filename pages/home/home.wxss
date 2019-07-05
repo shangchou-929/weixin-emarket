@@ -1,0 +1,32 @@
+.homeList{
+  margin: 20px 15px 0 15px;
+  overflow: hidden;
+
+}
+
+.list {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.list-img {
+ display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.list-name {
+  font-size: 15px;
+}
+
+.bottomimg{
+  display: block;
+  height: 120px;
+  width: 100%;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> e2c5262c3e7daa34f3a6f7e1cc2e605be74c9356
+}

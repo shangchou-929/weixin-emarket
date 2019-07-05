@@ -1,0 +1,125 @@
+
+.pay-main{
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.title{
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  padding-left: 8px;
+}
+
+.list{
+  overflow: hidden;
+}
+ .main-image{
+  display: block;
+  width:60px;
+  height:60px;
+  float: left;
+  padding: 10px;
+}
+.main_left{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: 10px;
+}
+.main_right{
+  float: right;
+  font-size: 13px;
+  margin: 18px;
+}
+.main-title{
+  display: flex;
+  font-size: 13rpx;
+}
+.main-price{
+  font-size: 13px;
+  color: red;
+}
+
+
+.pay-mainTwo{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.mianTwo-two{
+  overflow: hidden;
+}
+.array{
+  line-height: 40px;
+  font-size: 13px;
+  padding-left: 10px;
+  color: #808080;
+}
+.array image{
+  width: 18px;
+  height: 18px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: right;
+}
+
+.pay-mainThree{
+  width: 100%;
+  height: 70px;
+  background: white;
+}
+
+.mainThree-one{
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.mainThree-two{
+  height: 35px;
+}
+.mainThree-two input{
+  padding-left: 10px;
+  font-size: 12px;
+  height: 35px;
+  line-height: 35px
+}
+.pay-mainFive{
+  width: 100%;
+  height: 75px;
+  background: white;
+  margin-top: 5px
+}
+.mainFive-one{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.mainFive-one .left{
+  float: left;
+  padding-left: 10px;
+  font-size: 13px;
+}
+.mainFive-one .right{
+  float: right;
+  color: red;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.pay-Bottom{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #1AAD19;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-size: 15px;
+  text-align: center
+}

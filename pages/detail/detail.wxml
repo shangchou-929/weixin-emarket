@@ -1,0 +1,59 @@
+<view class="detail">
+  <view class="pro-infos">
+    <view>
+      <image class="pro-img" mode="width-Fix" src="{{currentPro.img}}"></image>
+    </view>
+    <view class="pro-info">
+      <view class="info-price">
+        <view class="pro-price fl">￥{{currentPro.price}}</view>
+        <view class="like fr">
+          <image class="info-img" mode="widthFix" src="{{currentPro.heart}}"></image>
+          <view class="focus">关注</view>
+        </view>
+        <view class="reminder fr">
+          <image class="info-img" mode="widthFix" src="{{remindImg}}"></image>
+          <view class="reduce">降价提醒</view>
+        </view>
+      </view>
+      <view class="info-name">{{currentPro.name}}</view>
+
+      <view class="insurance">
+        <view class="fl insurance-left">
+          <image class="fl left-icon" src="{{insuranceImg}}"></image>
+          <view class="fl left-word">京东放心购</view>
+        </view>
+        <view class="fl words">
+          <view class='insurWord'>送运费险</view>
+          <view class='insurWord'>闪电退款</view>
+        </view>
+        <view class="more">
+          <image class="moreIcon" src="{{moreImg}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="test">1111111</view>
+
+
+  <view class="bottomNav">
+    <view class="bottomLeft">
+      <view class="service bl">
+        <image class="serviceIcon e" mode="widthFix" src="{{serviceImg}}"></image>
+        <view class="blWords">联系客服</view>
+      </view>
+
+      <view class="shop bl">
+        <image class="shopIcon e" mode="widthFix" src="{{shopImg}}"></image>
+        <view class="blWords">进店</view>
+      </view>
+
+      <view class="carts bl">
+        <image class="cartsIcon e" mode="widthFix" src="{{cartsImg}}"></image>
+        <view class="blWords">购物车</view>
+      </view>
+    </view>
+    <view class="buy" bindtap="goPay" data-id="{{currentPro.id}}" data-title="{{currentPro.name}}" data-image="{{currentPro.img}}" data-price="{{currentPro.price}}">立即购买</view>
+    <view class="shopping" bindtap="addCart" data-id="{{currentPro.id}}" data-title="{{currentPro.name}}" data-image="{{currentPro.img}}" data-price="{{currentPro.price}}">加入购物车</view>
+  </view>
+</view>
