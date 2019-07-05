@@ -9,6 +9,5 @@
 * 加入购物车
 * 立即支付
 ## 页面展示
-主页展示
 ![](https://github.com/shangchou-929/weixin-emarket/raw/master/mydemo/demo1.png)
 
